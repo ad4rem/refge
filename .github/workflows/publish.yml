@@ -1,10 +1,11 @@
 name: publish Refge to nuget
 on:
+  workflow_dispatch:
+    branches: [ master ]
+  push:
+    branches: [ master ]
   pull_request:
-    branches:
-      - master
-    paths:
-      - 'Refge/**'
+    branches: [ master ]
 
 jobs:
   publish:
