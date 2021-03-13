@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <PackageId>Refge</PackageId>
+    <Title>Refge</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>ad4rem (@ad4rem)</Authors>
+    <Company>ad4rem.com</Company>
+    <PackageProjectUrl>https://github.com/ad4rem/refge</PackageProjectUrl>
+    <Description>A simple package with version methods tracking.</Description>
+    <Summary>A simple package with version methods.</Summary>
+    <RepositoryUrl>https://github.com/ad4rem/refge</RepositoryUrl>
+    <PackageTags>refge version</PackageTags>
+    <PackageReleaseNotes>First version.</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <AssemblyName>Refge</AssemblyName>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+
+</Project>

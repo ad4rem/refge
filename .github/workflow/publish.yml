@@ -1,0 +1,28 @@
+name: publish Refge to nuget
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Refge/**'
+jobs:
+  publish:
+    name: list Refge on nuget.org
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.300
+      
+      # Publish
+      - name: publish on version change
+        uses: brandedoutcast/publish-nuget@v2.5.5
+        with:
+          PROJECT_FILE_PATH: Refge/Refge.csproj
+          VERSION_REGEX: <Version>(.*)<\/Version>
+          TAG_COMMIT: true
+          TAG_FORMAT: Refge-v*
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
