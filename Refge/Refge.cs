@@ -13,5 +13,10 @@ namespace Refge
         {
             return "a" + version;
         }
+
+        public static string GetXVersion(string version)
+        {
+            return "x" + version;
+        }
     }
 }
