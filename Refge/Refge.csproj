@@ -12,8 +12,8 @@
     <Summary>A simple package with version methods.</Summary>
     <RepositoryUrl>https://github.com/ad4rem/refge</RepositoryUrl>
     <PackageTags>refge version</PackageTags>
-    <PackageReleaseNotes>First version.</PackageReleaseNotes>
-    <Version>1.0.0</Version>
+    <PackageReleaseNotes>Support v,a,x versions.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
     <AssemblyName>Refge</AssemblyName>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>

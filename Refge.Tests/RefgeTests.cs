@@ -19,5 +19,12 @@ namespace Refge.Tests
             var result = Refge.GetAVersion("1.0");
             result.Should().Be("a1.0");
         }
+
+        [TestMethod]
+        public void GetXVersionShouldSucceed()
+        {
+            var result = Refge.GetXVersion("1.0");
+            result.Should().Be("x1.0");
+        }
     }
 }

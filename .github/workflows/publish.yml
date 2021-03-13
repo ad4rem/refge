@@ -1,4 +1,4 @@
-name: publish Refge to nuget
+name: Publish
 on:
   workflow_dispatch:
     branches: [ master ]
