@@ -8,5 +8,10 @@ namespace Refge
         {
             return "v" + version;
         }
+
+        public static string GetAVersion(string version)
+        {
+            return "a" + version;
+        }
     }
 }
